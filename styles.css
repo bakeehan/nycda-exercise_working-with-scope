@@ -1,0 +1,71 @@
+body {
+	display: grid;
+	grid-template-areas:
+		"arguefirst arguesecond form"
+		"buttonfirst buttonsecond form"
+		"hover hover form"
+		"type type type";
+	grid-template-columns: 150px 150px auto;
+	grid-template-rows: 150px 30px 50px auto;
+	grid-gap: 10px;
+	padding: 20px 10%;
+	font-family: sans-serif;
+}
+
+.argue, .writer, .formholder {
+	border: 10px double black;
+}
+
+.writer {
+	grid-area: type;
+	padding: 15px;
+	background-color: #5da29a;
+}
+
+.hover {
+	background-color:pink;
+	grid-area: hover;
+	padding:7px;
+	text-align:right;
+	color: red;
+	font-size: 1.25em;
+	text-transform: uppercase;
+	border: 7px double red;
+	border-bottom-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+
+.argue {
+	text-align: center;
+	padding-top: 25%;
+	font-style: oblique;
+	font-size: 1.5em;
+}
+
+.argone {grid-area: arguefirst;}
+.argtwo {grid-area: arguesecond;}
+
+.button {
+	border-radius: 10px;
+}
+
+.argue, .button {
+	background-color: #679caa;
+}
+
+#argueOne {grid-area: buttonfirst;}
+#argueTwo {grid-area:buttonsecond;}
+
+.formholder {
+	background-color: #98cfce;
+	grid-area: form;
+	padding: 30px;
+}
+
+input {
+	display: block;
+	margin-bottom: 25px;
+	width: 98%;
+}
+
+/*#formGo {float:right;}*/
